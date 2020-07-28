@@ -1,2 +1,2 @@
-# Simulador de caixa de supermercado
+# Simuladores de caixa de supermercado
  Um simulador eficiente
