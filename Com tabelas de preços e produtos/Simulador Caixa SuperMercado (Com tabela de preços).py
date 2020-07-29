@@ -1,18 +1,17 @@
 from time import sleep
 print("="*50)
-print("{:^50}".format("LOJA SANTOS ARAUJO"))
-produtos = ("COMPUTADOR",
-            "CELULAR",
-            "TABLET",
-            "TELEVISÃO",
-            "FONE DE OUVIDO",
-            "GELADEIRA",
-            "FOGÃO",
-            "CAIXA DE SOM",
-            "GELÁGUA")
-preços = (1225,250,355,1280,20,550,530,80,65)
+print("{:^50}".format("SUPERMERCADO SANTOS ARAUJO"))
+produtos = ("BANANA",
+            "TOMATE",
+            "CARNE DE FRANGO",
+            "CARNE DE PORCO",
+            "MELÂNCIA",
+            "FEIJÃO",
+            "ARROZ",
+            "MACARRÃO")
+preços = (3.50,5.80,13,12.80,8.50,7.80,6.30,8)
 print("=" * 50)
-print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS"))
+print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)"))
 print("=" * 50)
 for tabela in range(0,len(produtos)):
     print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}")
@@ -78,4 +77,4 @@ Digite: '''))
     if resposta == "S":
         break
 print('='*50)
-print("Tenha um bom dia!!\nVolte sempre a LOJA SANTOS ARAUJO")
+print("Tenha um bom dia!!\nVolte sempre a SUPERMERCADO SANTOS ARAUJO")
