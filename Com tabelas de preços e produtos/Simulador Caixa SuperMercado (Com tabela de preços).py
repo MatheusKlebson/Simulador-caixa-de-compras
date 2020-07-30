@@ -6,7 +6,7 @@ print("{:^50}".format("PARA COMPRAS ACIMA DE 50R$ PODE SER FEITO")) #Cabeçalho 
 print("="*50)
 print('''[1] A vista dinheiro/cheque (10% de Desconto)
 [2] Cartão com parcela (5X ou mais, juros de 10%)
-[3] Cartão a vista (8% de Desconto)''') #Amostra das formas de pagamentos acima de 50 Reais
+[3] Cartão a vista (8% de Desconto)''') #Mostrando as formas de pagamentos acima de 50 Reais
 produtos = ("BANANA",
             "TOMATE",
             "CARNE DE FRANGO",
@@ -17,7 +17,7 @@ produtos = ("BANANA",
             "MACARRÃO") #Produtos disponiveis no mercado
 preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8) #Respectivos preços
 print("=" * 50)
-print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabelas de preços e produtos
+print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabela de preços e produtos
 print("=" * 50)
 for tabela in range(0, len(produtos)): #Laço de repetição que permite formar a tabela
     print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}") #Tabela sendo mostrada na tela
