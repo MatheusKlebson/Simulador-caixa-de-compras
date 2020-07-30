@@ -1,13 +1,12 @@
-from time import sleep
-
+from time import sleep #Biblioteca para fazer o programa dormir por alguns segundos, quando for pedido
 print("="*50)
-print("{:^50}".format("SUPERMERCADO SANTOS ARAUJO"))
+print("{:^50}".format("SUPERMERCADO SANTOS ARAUJO")) #Cabeçalho do programa
 print("="*50)
-print("{:^50}".format("PARA COMPRAS ACIMA DE 50R$ PODE SER FEITO"))
+print("{:^50}".format("PARA COMPRAS ACIMA DE 50R$ PODE SER FEITO")) #Cabeçalho que mostra o que estará disponivel caso as compras fiquem acima de 50 Reais
 print("="*50)
 print('''[1] A vista dinheiro/cheque (10% de Desconto)
 [2] Cartão com parcela (5X ou mais, juros de 10%)
-[3] Cartão a vista (8% de Desconto)''')
+[3] Cartão a vista (8% de Desconto)''') #Amostra das formas de pagamentos acima de 50 Reais
 produtos = ("BANANA",
             "TOMATE",
             "CARNE DE FRANGO",
@@ -15,17 +14,17 @@ produtos = ("BANANA",
             "MELÂNCIA",
             "FEIJÃO",
             "ARROZ",
-            "MACARRÃO")
-preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8)
+            "MACARRÃO") #Produtos disponiveis no mercado
+preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8) #Respectivos preços
 print("=" * 50)
-print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)"))
+print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabelas de preços e produtos
 print("=" * 50)
-for tabela in range(0, len(produtos)):
-    print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}")
+for tabela in range(0, len(produtos)): #Laço de repetição que permite formar a tabela
+    print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}") #Tabela sendo mostrada na tela
 print("=" * 50)
 custo = 0
 print("=" * 50)
-print(f"{'FAÇA AQUI SUAS COMPRAS':^50}")
+print(f"{'FAÇA AQUI SUAS COMPRAS':^50}") #Cabeçalho que inicia a interatividade com o usuário
 while True:
     print("=" * 50)
     nome = str(input("Nome do produto: ")).strip().upper()
