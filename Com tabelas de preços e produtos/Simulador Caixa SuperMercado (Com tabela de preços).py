@@ -14,10 +14,10 @@ produtos = ("BANANA",
             "MELÂNCIA",
             "FEIJÃO",
             "ARROZ",
-            "MACARRÃO") #Produtos disponiveis no mercado
-preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8) #Respectivos preços
+            "MACARRÃO") #Tupla com os Produtos disponiveis no mercado
+preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8) #Tupla com os Respectivos preços
 print("=" * 50)
-print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabela de preços e produtos
+print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabela de preços e produtos, suponhando que cada produto é vendido por quilo(Kg)
 print("=" * 50)
 for tabela in range(0, len(produtos)): #Laço de repetição que permite formar a tabela
     print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}") #Tabela sendo mostrada na tela
@@ -27,12 +27,12 @@ print("=" * 50)
 print(f"{'FAÇA AQUI SUAS COMPRAS':^50}") #Cabeçalho que inicia a interatividade com o usuário
 while True:
     print("=" * 50)
-    nome = str(input("Nome do produto: ")).strip().upper()
+    nome = str(input("Nome do produto: ")).strip().upper() #Variavel que guardará o nome do produto que será comprado 
     if nome in produtos:
-        pos = produtos.index(nome)
-        preço = preços[pos]
-        unidade = float(input("Quantos quilos?KG"))
-        totuni = preço * unidade
+        pos = produtos.index(nome) #Variavel que encontrará a posição do produto na tabela
+        preço = preços[pos] #Variavel que associa a posição do produto com o seu respectivo preço
+        unidade = float(input("Quantos quilos?KG")) #Variavel que guardará o total de unidades o comprador deseja por determinado produto
+        totuni = preço * unidade #Variavel que multiplicará o preço do produto com quantas unidades(Kg) ele deseja
         if unidade > 1:
             print(f"Preço;R${preço} X {unidade}KG")
         else:
