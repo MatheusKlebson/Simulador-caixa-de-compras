@@ -4,9 +4,11 @@ print("{:^50}".format("SUPERMERCADO SANTOS ARAUJO")) #Cabeçalho do programa
 print("="*50)
 print("{:^50}".format("PARA COMPRAS ACIMA DE 50R$ PODE SER FEITO")) #Cabeçalho que mostra o que estará disponivel caso as compras fiquem acima de 50 Reais
 print("="*50)
+#Mostrando as formas de pagamentos acima de 50 Reais
 print('''[1] A vista dinheiro/cheque (10% de Desconto)
 [2] Cartão com parcela (5X ou mais, juros de 10%)
-[3] Cartão a vista (8% de Desconto)''') #Mostrando as formas de pagamentos acima de 50 Reais
+[3] Cartão a vista (8% de Desconto)''') 
+#Tupla com os Produtos disponiveis no mercado
 produtos = ("BANANA",
             "TOMATE",
             "CARNE DE FRANGO",
@@ -14,10 +16,11 @@ produtos = ("BANANA",
             "MELÂNCIA",
             "FEIJÃO",
             "ARROZ",
-            "MACARRÃO") #Tupla com os Produtos disponiveis no mercado
+            "MACARRÃO") 
 preços = (3.50, 5.80, 13, 12.80, 8.50, 7.80, 6.30, 8) #Tupla com os Respectivos preços
+#Cabeçalho que inicia a tabela de preços e produtos
 print("=" * 50)
-print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Cabeçalho que inicia a tabela de preços e produtos, suponhando que cada produto é vendido por quilo(Kg)
+print("{:^50}".format("LISTA DE PRODUTOS E PREÇOS(Por KG)")) #Suponhando que cada produto é vendido por quilo(Kg)
 print("=" * 50)
 for tabela in range(0, len(produtos)): #Laço de repetição que permite formar a tabela
     print(f"{produtos[tabela]:.<40}R${preços[tabela]:8.2f}") #Tabela sendo mostrada na tela
@@ -32,7 +35,7 @@ while True:
         pos = produtos.index(nome) #Variavel que encontrará a posição do produto na tabela
         preço = preços[pos] #Variavel que associa a posição do produto com o seu respectivo preço
         unidade = float(input("Quantos quilos?KG")) #Variavel que guardará o total de unidades o comprador deseja por determinado produto
-        totuni = preço * unidade #Variavel que multiplicará o preço do produto com quantas unidades(Kg) ele deseja
+        totuni = preço * unidade #Variavel que multiplicará o preço do produto com quantas unidades(Kg) que ele deseja
         if unidade > 1:
             print(f"Preço;R${preço} X {unidade}KG")
         else:
