@@ -35,16 +35,16 @@ while True:
         pos = produtos.index(nome) #Variavel que encontrará a posição do produto na tabela
         preço = preços[pos] #Variavel que associa a posição do produto com o seu respectivo preço
         unidade = float(input("Quantos quilos?KG")) #Variavel que guardará o total de unidades o comprador deseja por determinado produto
-        totuni = preço * unidade #Variavel que multiplicará o preço do produto com quantas unidades(Kg) que ele deseja
+        totuni = preço * unidade 
         if unidade > 1:
             print(f"Preço;R${preço} X {unidade}KG")
         else:
             print(f"Preço:R${preço}")
         custo += totuni
-    else:
+    else: #Caso o nome do produto seja digitado errado pelo usuário
         print("Produto não disponivel")
     print("=" * 50)
-    resposta = " "
+    resposta = " " #Pequena gambiarra que possibilite a opção de "Quer continuar?" tenha uma melhor usabilidade
     while not resposta in "SN":
         resposta = str(input("Quer continuar?[S/N]:")).upper().strip()[0]
     if resposta == "N":
