@@ -34,7 +34,7 @@ while True:
     if nome in produtos:
         pos = produtos.index(nome) #Variavel que encontrará a posição do produto na tabela
         preço = preços[pos] #Variavel que associa a posição do produto com o seu respectivo preço
-        unidade = float(input("Quantos quilos?KG")) #Variavel que guardará o total de unidades o comprador deseja por determinado produto
+        unidade = float(input("Quantos quilos?KG: ")) #Variavel que guardará o total de unidades o comprador deseja por determinado produto
         totuni = preço * unidade 
         if unidade > 1:
             print(f"Preço;R${preço} X {unidade}KG")
