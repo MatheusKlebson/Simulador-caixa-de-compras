@@ -55,4 +55,4 @@ Digite: '''))
     if resposta == "S":
         break
 print('='*50)
-print("Tenha um bom dia!!\nVolte sempre a Loja Santos Araujo")
+print("Tenha um bom dia!!\nVolte sempre ao Supermercado Santos Araujo")
