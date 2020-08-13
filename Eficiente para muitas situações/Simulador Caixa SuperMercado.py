@@ -1,7 +1,7 @@
 from time import sleep
 custo = 0
 print("="*50)
-print("{:^50}".format("LOJA SANTOS ARAUJO"))
+print("{:^50}".format("SUPERMERCADO SANTOS ARAUJO"))
 while True:
     print("=" * 50)
     nome = str(input("Nome do produto: ")).strip().title()
